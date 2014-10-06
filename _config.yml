@@ -2,8 +2,8 @@
 title: Hack the Burgh
 email: htb@comp-soc.com	
 description: "Major League Hacking hits Edinburgh"
-baseurl: "http://compsoc-edinburgh.github.io/"
-url: "http://compsoc-edinburgh.github.io/"
+baseurl: "http://compsoc-edinburgh.github.io/hacktheburgh/"
+url: "http://compsoc-edinburgh.github.io/hacktheburgh/"
 author: "CompSoc"
 
 # Main Navigation (Manual)
