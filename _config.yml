@@ -1,0 +1,20 @@
+# Site Settings
+title: Hack the Burgh
+email: htb@comp-soc.com	
+description: "Major League Hacking hits Edinburgh"
+baseurl: ""
+url: "http://localhost:4000"
+author: "CompSoc"
+
+# Main Navigation (Manual)
+navigation:
+ - text: Home
+   url: /
+ - text: Where is HTB?
+   url: "#map"
+
+# Build Settings
+paginate: 3
+paginate_path: "blog/page:num"
+markdown: kramdown
+permalink: pretty
