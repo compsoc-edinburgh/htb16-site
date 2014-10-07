@@ -176,6 +176,7 @@ footer {
     padding-bottom: 25%; // This is the aspect ratio
     height: 0;
     overflow: hidden;
+    max-height: 400px;
 }
     .google-maps iframe {
         position: absolute;
@@ -184,6 +185,12 @@ footer {
         width: 100% !important;
         height: 100% !important;
     }
+
+@media(max-width: 768px){
+    .google-maps {
+	padding-bottom: 65%;
+    }
+}
 
 .go-top {
     /* Initially hidden, shown by JS: */
