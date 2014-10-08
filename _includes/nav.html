@@ -23,7 +23,7 @@
 	{% assign url = page.url|remove:'index.html' %}
 	{% for link in site.navigation %}
 	<li {% if page.url == link.url %}class="active"{% endif %}>
-	  <a href="{{ link.url | append: site.baseurl }}" title="{{ link.text }}">{{link.text}}</a>
+	  <a href="{{ site.baseurl }}{{ link.url }}" title="{{ link.text }}">{{link.text}}</a>
 	</li>
 	{% endfor %}
       </ul>
