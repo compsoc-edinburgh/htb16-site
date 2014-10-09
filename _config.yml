@@ -12,8 +12,12 @@ navigation:
    url: /
  - text: Where is HTB?
    url: "#map"
+ - text: FAQ
+   url: "#faq"
  - text: "Sponsors"
    url: "#sponsors"
+ - text: Sign Up
+   url: ""
 
 # Build Settings
 paginate: 3
