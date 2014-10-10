@@ -125,9 +125,15 @@ cite {
     border-bottom: 3px solid #7E184F;
 }
 
+    .container-fuzz a {
+	color: #FFF !important;
+	text-decoration: underline;
+    }
+
+
     /* Screen MD */
     @media (max-width: 992px) {
-	.container-blue,
+	.container-fuzz,
 	.container-purple {
 	    padding: 20px 0px;
 	}
