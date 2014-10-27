@@ -18,6 +18,8 @@ navigation:
    url: "#sponsors"
  - text: Sign Up
    url: ""
+ - text: Twitter Wall
+   url: "/wall"
 
 # Build Settings
 paginate: 3
