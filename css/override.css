@@ -88,7 +88,7 @@ mark, .mark { background: #9AC2D9; color: #000; }
 }
 
 .btn-signup {
-    display: block;
+    display: inline-block;
     width: 200px;
     margin: 0px auto;
     margin-top: 30px;
