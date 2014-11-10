@@ -118,11 +118,11 @@ cite {
     color: #F8F8F8;
     border-bottom: 3px solid #D2271E;
 }
-.container-purple {
-    background: #9E1F63;
+.container-blue {
+    background: #7EACCC;
     padding: 20px 40px;
     color: #FFF;
-    border-bottom: 3px solid #7E184F;
+    border-bottom: 3px solid #4988B5;
 }
 
     .container-fuzz a {
@@ -134,7 +134,7 @@ cite {
     /* Screen MD */
     @media (max-width: 992px) {
 	.container-fuzz,
-	.container-purple {
+	.container-blue {
 	    padding: 20px 0px;
 	}
     }
@@ -293,8 +293,8 @@ hr {
 .htb-logo {
     display: block;
     padding: 10px 0px;
-    width: 600px;
-    min-width: 60px;
+    width: 400px;
+    min-width: 50px;
     margin: 0px auto;
 }
 
