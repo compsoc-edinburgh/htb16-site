@@ -41,4 +41,12 @@ $(document).ready(function() {
 $( ".post-wrap table" ).addClass( "table table-responsive" );
 $( ".post-wrap img" ).addClass( "img-responsive" );
 
+$( "#faq" ).readmore({
+    speed: 800,
+    maxHeight: 500,
+    moreLink: '<a href="#" class="btn btn-danger btn-lg btn-signup">Read more...</a>',
+    lessLink: '<a href="#" class="btn btn-danger btn-lg btn-signup">Hide</a>'
+});
+
+
 </script>
