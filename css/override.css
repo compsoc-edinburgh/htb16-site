@@ -115,7 +115,7 @@ cite {
     background: #ED6550;
     padding: 20px 40px;
     color: #F8F8F8;
-    border-bottom: 3px solid #D2271E;
+    border-bottom: none;
 }
 .container-blue {
     background: #7EACCC;
@@ -136,6 +136,22 @@ cite {
 	.container-blue {
 	    padding: 20px 0px;
 	}
+    }
+
+
+#countdown {
+    text-align: center;
+    font-size: 100px; /* Fallback */
+    font-size: 8vmin;
+    font-weight: lighter;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+    /* Set maximum for largest BS breakpoint */
+    @media (min-width: 1200px) {
+        #countdown {
+            font-size: 100px;
+        }
     }
 
 
