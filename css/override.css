@@ -176,7 +176,7 @@ cite {
 .fold-wrapper {
     /* fallback: */
     background-color: #DDD;
-    background-image: url('../img/arthurs-seat.jpg');
+    background-image: url('../img/arthurs-seat-2.jpg');
     background-size: cover;
     background-position: center center;
 }
@@ -308,15 +308,15 @@ hr {
 .htb-logo {
     display: block;
     padding: 10px 0px;
-    width: 400px;
-    min-width: 50px;
-    min-height: 50px;
+    width: 20vw;
+    min-width: 250px;
+    min-height: 250px;
     margin: 0px auto;
 }
 
 @media(max-width: 480px){
     .htb-logo {
-	padding: 0px 40px;
+        
     }
 }
 
