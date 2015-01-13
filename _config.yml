@@ -18,6 +18,8 @@ navigation:
    url: "#sponsors"
  - text: Twitter Wall
    url: "/wall"
+ - text: "Signup"
+   url: "https://ti.to/hacktheburgh/htb2015"
 
 # Build Settings
 paginate: 3
