@@ -16,8 +16,6 @@ navigation:
    url: "#faq"
  - text: "Sponsors"
    url: "#sponsors"
- - text: Sign Up
-   url: ""
  - text: Twitter Wall
    url: "/wall"
 
