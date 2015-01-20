@@ -12,6 +12,8 @@ navigation:
    url: /
  - text: Where is HTB?
    url: "#map"
+ - text: About
+   url: "#about"
  - text: FAQ
    url: "#faq"
  - text: "Sponsors"
