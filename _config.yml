@@ -20,7 +20,7 @@ navigation:
    url: "#sponsors"
  - text: Twitter Wall
    url: "/wall"
- - text: "Signup"
+ - text: "Waiting List"
    url: "https://ti.to/hacktheburgh/htb2015"
 
 # Build Settings
