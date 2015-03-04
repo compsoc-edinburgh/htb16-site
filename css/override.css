@@ -320,6 +320,10 @@ hr {
     }
 }
 
+iframe {
+	border: 0 !important;
+}
+
 .iframe-responsive {
     position: relative;
     padding-bottom: 56.25%;
