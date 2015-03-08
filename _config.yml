@@ -10,8 +10,8 @@ author: "CompSoc"
 navigation:
  - text: Home
    url: /
- - text: Where is HTB?
-   url: "#map"
+ - text: Schedule
+   url: "#schedule"
  - text: About
    url: "#about"
  - text: FAQ
@@ -20,6 +20,8 @@ navigation:
    url: "#sponsors"
  - text: Twitter Wall
    url: "/wall"
+ - text: Where is HTB?
+   url: "#map"
  - text: "Mailing List"
    url: "https://ti.to/hacktheburgh/htb2015"
 
