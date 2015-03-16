@@ -6,266 +6,67 @@ title: Home
 
 <div class="fold-wrapper">
   
-  <div class="container">
-    <div class="fold-main">
-      <img class="img-responsive htb-logo" src="{{ site.baseurl }}/img/HackTheBurgh-round-Spray-web.png" alt="Hack the 'Burgh">
-      <!--a href="" class="btn btn-danger btn-lg btn-signup">Coming Soon</a-->
+  <div id="carousel-photostream" class="carousel slide" data-ride="carousel">
 
-      <!--div class="signup-wrap">
-        <tito-button event="hacktheburgh/htb2015">Sign Up</tito-button>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      
+      <!--div class="item">
+          <img src="{{ site.baseurl }}/img/gallery/" alt="...">
+          <div class="carousel-caption">
+            
+          </div>
       </div-->
       
+      <div class="item active">
+          <img src="{{ site.baseurl }}/img/arthurs-seat-2.jpg" alt="...">
+      </div>
+      
+      {% for image in site.data.gallery %}
+      <div class="item">
+        <img src="{{ site.baseurl }}/img/gallery/{{ image.name }}.jpg" class="img-responsive" alt="...">
+        <div class="carousel-caption">
+          Image Credit: {{ image.credit }}
+        </div>
+      </div>
+      {% endfor %}
+      
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-photostream" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-photostream" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+    <div class="fold-main">
+      <img class="img-responsive htb-logo" src="{{ site.baseurl }}/img/HackTheBurgh-round-Spray-web.png" alt="Hack the 'Burgh">
     </div>
   </div>
+
+  <!--div class="container">
+      <div class="fold-main">
+        <img class="img-responsive htb-logo" src="{{ site.baseurl }}/img/HackTheBurgh-round-Spray-web.png" alt="Hack the 'Burgh">
+        
+      </div>
+  </div-->
   
 </div><!-- /.fold-wrapper -->
 
 {% include nav.html %}
 
-<div class="container-fuzz">
-  <div class="container">
-    <h1 class="jumbo jumbo-inv" id="countdown-head">Edinburgh's headline hackathon.</h1>
-    <div id="countdown"></div>
-    <h3 class="centre-block" id="countdown-foot">
-      Coming March 14th - 15th 2015 at the Informatics Forum
-    </h3>
+
+<!--div class="container">
+  <div class="centre-block">
+    <a href="" class="btn btn-danger btn-lg btn-signup">Coming Soon</a>
   </div>
-</div>
+</div-->
 
 
-<div class="container">
-  <a name="schedule"></a>
-  <br><br>
-  <h1 class="jumbo">Schedule</h1>
-  <div class="timeline">
-    <div class="time-slider"></div>
-    
-    
-    <div class="timeline-block">
-      <div class="timeline-img" style="border-color: #5cb85c;">
-        <span class="glyphicon glyphicon-hourglass">
-      </div>
-      <h1 class="timeline-time">10:00 Sat</h1>
-      <div class="timeline-content">
-        <h1>Doors Open</h1>
-        <p>We will begin registration, please make sure you have Student ID and your ticket details (On a phone etc. is fine.)</p>
-      </div>
-    </div><!-- .timeline-block -->
-    
-    
-    <div class="timeline-block block-right">
-      <div class="timeline-img" style="border-color: #5cb85c;">
-        <span class="glyphicon glyphicon-bullhorn">
-      </div>
-      <h1 class="timeline-time">11:00 Sat</h1>
-      <div class="timeline-content">
-        <h1>Welcome Talks</h1>
-        <p>Opening presentations on Hack details, API presentations and Challenge pitches.</p>
-      </div>
-    </div><!-- .timeline-block -->
-
-
-    <div class="timeline-block">
-      <div class="timeline-img" style="border-color: #5bc0de;">
-        <span class="glyphicon glyphicon-cutlery">
-      </div>
-      <h1 class="timeline-time">12:00 Sat</h1>
-      <div class="timeline-content">
-        <h1>Lunch</h1>
-        <p>Union of Genius, the popular local soup maker will be serving lunch in the atrium from 12 to 12:30.</p>
-        <table class="table">
-          <tr>
-            <td>Tomato, roast sweet pepper and harissa <br><small>(vegan; df, gf)</small></td>
-            <td>Ghanaian chicken and peanut curry <br><small>(df, gf)</small></td>
-            <td>Italian sausage with fennel <br><small>(df)</small></td>
-          </tr>
-        </table>
-      </div>
-    </div><!-- .timeline-block -->
-    
-    
-    <div class="timeline-block block-right">
-      <div class="timeline-img" style="border-color: #5cb85c;">
-        <span class="glyphicon glyphicon-console">
-      </div>
-      <h1 class="timeline-time">12:30 Sat</h1>
-      <div class="timeline-content">
-        <h1>Hacking Begins!</h1>
-        <p>Get going! Those with a team can get cracking, and we'll be doing an informal mixer and pitching session for people needing a team or more members.</p>
-      </div>
-    </div><!-- .timeline-block -->
-    
-    
-    
-    <div class="timeline-block">
-      <div class="timeline-img" style="border-color: #f0ad4e;">
-        <span class="glyphicon glyphicon-calendar">
-      </div>
-      <h1 class="timeline-time">16:00 Sat</h1>
-      <div class="timeline-content">
-        <h1>J.P.Morgan Mini Event</h1>
-        <p>Code in the Dark - re-create a webpage in HTML & CSS without a preview; This is guaranteed to be funny!</p>
-      </div>
-    </div><!-- .timeline-block -->
-    
-    
-    
-    <div class="timeline-block block-right">
-      <div class="timeline-img" style="border-color: #5bc0de;">
-        <span class="glyphicon glyphicon-cutlery">
-      </div>
-      <h1 class="timeline-time">18:30 Sat</h1>
-      <div class="timeline-content">
-        <h1>Dinner</h1>
-        <p>Selection of Hot foods will be available.</p>
-        <table class="table">
-          <tr>
-            <td>Spiced thai coconut chicken curry</td>
-            <td>Sweet Potato and Spinach Tagine <br><small>(gf, df, vegan)</small></td>
-            <td>Rice, Naan Bread, Teas, Coffee & Soft Drinks</td>
-          </tr>
-        </table>
-      </div>
-    </div><!-- .timeline-block -->
-    
-    
-    
-    <div class="timeline-block">
-      <div class="timeline-img" style="border-color: #f0ad4e;">
-        <span class="glyphicon glyphicon-calendar">
-      </div>
-      <h1 class="timeline-time">21:00 Sat</h1>
-      <div class="timeline-content">
-        <h1>Dell Mini Event</h1>
-        <p>SlideShare karaoke... It's like karaoke, but with powerpoint presentations... Almost guaranteed to be funny.</p>
-      </div>
-    </div><!-- .timeline-block -->
-
-
-    <div class="timeline-block block-right">
-      <div class="timeline-img" style="border-color: #f0ad4e;">
-        <span class="glyphicon glyphicon-calendar">
-      </div>
-      <h1 class="timeline-time">23:00 Sun</h1>
-      <div class="timeline-content">
-        <h1>Bloomberg Mini Event</h1>
-        <p>Finally Edinburgh Uni will be playing Werewolf on home turf! We welcome you 
-        to the village of Haskell Curry for a good game of lyhnching and werewolf murders!
-        <br/>
-        <small>(Werewolf aka Mafia...)</small>
-        </p>
-      </div>
-    </div><!-- .timeline-block -->
-
-
-    <div class="timeline-block">
-      <div class="timeline-img" style="border-color: #5bc0de;">
-        <span class="glyphicon glyphicon-cutlery">
-      </div>
-      <h1 class="timeline-time">00:15 Sun</h1>
-      <div class="timeline-content">
-        <h1>Midnight Food!</h1>
-        <p>
-        We're getting a large order of Pizza in to keep you going through the night!
-        <br/>
-        <small>(Veggie pizza will be available, vegans come chat to us)</small>
-        </p>
-      </div>
-    </div><!-- .timeline-block -->
-
-    
-    
-    <div class="timeline-block block-right">
-      <div class="timeline-img" style="border-color: #5bc0de;">
-        <span class="glyphicon glyphicon-cutlery">
-      </div>
-      <h1 class="timeline-time">08:00 Sun</h1>
-      <div class="timeline-content">
-        <h1>Breakfast</h1>
-        <p>Selection of breakfast foods will be available.</p>
-        <table class="table">
-          <tr>
-            <td>Hot Filled Rolls (Egg, Bacon, Sausage & Tomato)</td>
-            <td>Fresh Fruit, Yoghurt & Cereal Bars</td>
-            <td>Teas, Coffee & Fruit Juices</td>
-          </tr>
-        </table>
-      </div>
-    </div><!-- .timeline-block -->
-    
-
-    <div class="timeline-block">
-      <div class="timeline-img" style="border-color: #d9534f;">
-        <span class="glyphicon glyphicon-console">
-      </div>
-      <h1 class="timeline-time">13:00 Sun</h1>
-      <div class="timeline-content">
-        <h1>End of Hacking!</h1>
-        <p>Keyboards down, commits pushed and apps deployed, get ready to present!</p>
-        <strong>Submit here:</strong> <a href="http://hacktheburgh.challengepost.com/" name="ChallengePost">http://hacktheburgh.challengepost.com/</a>
-      </div>
-    </div><!-- .timeline-block -->
-
-
-    <div class="timeline-block block-right">
-      <div class="timeline-img" style="border-color: #5bc0de;">
-        <span class="glyphicon glyphicon-cutlery">
-      </div>
-      <h1 class="timeline-time">13:00 Sun</h1>
-      <div class="timeline-content">
-        <h1>Lunch</h1>
-        <p>Selection of hot foods will be available.</p>
-        <table class="table">
-          <tr>
-            <td>Chille Con Carne <br><small>(gf, df)</small></td>
-            <td>Vegetable Bean Chilli <br><small>(vegan, df, gf)</small></td>
-            <td>Salad, Salsa, Cheese, Guacamole & Sour Cream</td>
-          </tr>
-        </table>
-      </div>
-    </div><!-- .timeline-block -->
-
-
-    <div class="timeline-block">
-      <div class="timeline-img" style="border-color: #5cb85c;">
-        <span class="glyphicon glyphicon-blackboard">
-      </div>
-      <h1 class="timeline-time">14:00 Sun</h1>
-      <div class="timeline-content">
-        <h1>Hack Presentations</h1>
-        <p>Teams will have 2 minutes to show off their hack to the judges and other hackers.</p>
-      </div>
-    </div><!-- .timeline-block -->
-
-
-    <div class="timeline-block block-right">
-      <div class="timeline-img" style="border-color: #5cb85c;">
-        <span class="glyphicon glyphicon-star">
-      </div>
-      <h1 class="timeline-time">15:00 Sun</h1>
-      <div class="timeline-content">
-        <h1>Prizes and Closing Talks</h1>
-        <p>The winners of the main prize and sponsor's challenges will be announced and will recieve their prizes.</p>
-      </div>
-    </div><!-- .timeline-block -->
-
-
-    <div class="timeline-block">
-      <div class="timeline-img" style="border-color: #d9534f;">
-        <span class="glyphicon glyphicon-hourglass">
-      </div>
-      <h1 class="timeline-time">16:00 Sun</h1>
-      <div class="timeline-content">
-        <h1>Doors Close</h1>
-        <p>The hack is over, thanks for coming! Coaches will be departing soon after 16:00.</p>
-      </div>
-    </div><!-- .timeline-block -->
-    
-    
-    
-    
-  </div><!-- .timeline -->
-</div>
 
 
 
@@ -568,6 +369,247 @@ title: Home
     </div><!-- /.row -->
   </div>
 </div><!-- /.container -->
+
+
+
+
+
+<div class="container">
+  <a name="schedule"></a>
+  <br><br>
+  <h1 class="jumbo">Schedule</h1>
+  <div class="timeline">
+    <div class="time-slider"></div>
+    
+    
+    <div class="timeline-block">
+      <div class="timeline-img" style="border-color: #5cb85c;">
+        <span class="glyphicon glyphicon-hourglass">
+      </div>
+      <h1 class="timeline-time">10:00 Sat</h1>
+      <div class="timeline-content">
+        <h1>Doors Open</h1>
+        <p>We will begin registration, please make sure you have Student ID and your ticket details (On a phone etc. is fine.)</p>
+      </div>
+    </div><!-- .timeline-block -->
+    
+    
+    <div class="timeline-block block-right">
+      <div class="timeline-img" style="border-color: #5cb85c;">
+        <span class="glyphicon glyphicon-bullhorn">
+      </div>
+      <h1 class="timeline-time">11:00 Sat</h1>
+      <div class="timeline-content">
+        <h1>Welcome Talks</h1>
+        <p>Opening presentations on Hack details, API presentations and Challenge pitches.</p>
+      </div>
+    </div><!-- .timeline-block -->
+
+
+    <div class="timeline-block">
+      <div class="timeline-img" style="border-color: #5bc0de;">
+        <span class="glyphicon glyphicon-cutlery">
+      </div>
+      <h1 class="timeline-time">12:00 Sat</h1>
+      <div class="timeline-content">
+        <h1>Lunch</h1>
+        <p>Union of Genius, the popular local soup maker will be serving lunch in the atrium from 12 to 12:30.</p>
+        <table class="table">
+          <tr>
+            <td>Tomato, roast sweet pepper and harissa <br><small>(vegan; df, gf)</small></td>
+            <td>Ghanaian chicken and peanut curry <br><small>(df, gf)</small></td>
+            <td>Italian sausage with fennel <br><small>(df)</small></td>
+          </tr>
+        </table>
+      </div>
+    </div><!-- .timeline-block -->
+    
+    
+    <div class="timeline-block block-right">
+      <div class="timeline-img" style="border-color: #5cb85c;">
+        <span class="glyphicon glyphicon-console">
+      </div>
+      <h1 class="timeline-time">12:30 Sat</h1>
+      <div class="timeline-content">
+        <h1>Hacking Begins!</h1>
+        <p>Get going! Those with a team can get cracking, and we'll be doing an informal mixer and pitching session for people needing a team or more members.</p>
+      </div>
+    </div><!-- .timeline-block -->
+    
+    
+    
+    <div class="timeline-block">
+      <div class="timeline-img" style="border-color: #f0ad4e;">
+        <span class="glyphicon glyphicon-calendar">
+      </div>
+      <h1 class="timeline-time">16:00 Sat</h1>
+      <div class="timeline-content">
+        <h1>J.P.Morgan Mini Event</h1>
+        <p>Code in the Dark - re-create a webpage in HTML & CSS without a preview; This is guaranteed to be funny!</p>
+      </div>
+    </div><!-- .timeline-block -->
+    
+    
+    
+    <div class="timeline-block block-right">
+      <div class="timeline-img" style="border-color: #5bc0de;">
+        <span class="glyphicon glyphicon-cutlery">
+      </div>
+      <h1 class="timeline-time">18:30 Sat</h1>
+      <div class="timeline-content">
+        <h1>Dinner</h1>
+        <p>Selection of Hot foods will be available.</p>
+        <table class="table">
+          <tr>
+            <td>Spiced thai coconut chicken curry</td>
+            <td>Sweet Potato and Spinach Tagine <br><small>(gf, df, vegan)</small></td>
+            <td>Rice, Naan Bread, Teas, Coffee & Soft Drinks</td>
+          </tr>
+        </table>
+      </div>
+    </div><!-- .timeline-block -->
+    
+    
+    
+    <div class="timeline-block">
+      <div class="timeline-img" style="border-color: #f0ad4e;">
+        <span class="glyphicon glyphicon-calendar">
+      </div>
+      <h1 class="timeline-time">21:00 Sat</h1>
+      <div class="timeline-content">
+        <h1>Dell Mini Event</h1>
+        <p>SlideShare karaoke... It's like karaoke, but with powerpoint presentations... Almost guaranteed to be funny.</p>
+      </div>
+    </div><!-- .timeline-block -->
+
+
+    <div class="timeline-block block-right">
+      <div class="timeline-img" style="border-color: #f0ad4e;">
+        <span class="glyphicon glyphicon-calendar">
+      </div>
+      <h1 class="timeline-time">23:00 Sun</h1>
+      <div class="timeline-content">
+        <h1>Bloomberg Mini Event</h1>
+        <p>Finally Edinburgh Uni will be playing Werewolf on home turf! We welcome you 
+        to the village of Haskell Curry for a good game of lyhnching and werewolf murders!
+        <br/>
+        <small>(Werewolf aka Mafia...)</small>
+        </p>
+      </div>
+    </div><!-- .timeline-block -->
+
+
+    <div class="timeline-block">
+      <div class="timeline-img" style="border-color: #5bc0de;">
+        <span class="glyphicon glyphicon-cutlery">
+      </div>
+      <h1 class="timeline-time">00:15 Sun</h1>
+      <div class="timeline-content">
+        <h1>Midnight Food!</h1>
+        <p>
+        We're getting a large order of Pizza in to keep you going through the night!
+        <br/>
+        <small>(Veggie pizza will be available, vegans come chat to us)</small>
+        </p>
+      </div>
+    </div><!-- .timeline-block -->
+
+    
+    
+    <div class="timeline-block block-right">
+      <div class="timeline-img" style="border-color: #5bc0de;">
+        <span class="glyphicon glyphicon-cutlery">
+      </div>
+      <h1 class="timeline-time">08:00 Sun</h1>
+      <div class="timeline-content">
+        <h1>Breakfast</h1>
+        <p>Selection of breakfast foods will be available.</p>
+        <table class="table">
+          <tr>
+            <td>Hot Filled Rolls (Egg, Bacon, Sausage & Tomato)</td>
+            <td>Fresh Fruit, Yoghurt & Cereal Bars</td>
+            <td>Teas, Coffee & Fruit Juices</td>
+          </tr>
+        </table>
+      </div>
+    </div><!-- .timeline-block -->
+    
+
+    <div class="timeline-block">
+      <div class="timeline-img" style="border-color: #d9534f;">
+        <span class="glyphicon glyphicon-console">
+      </div>
+      <h1 class="timeline-time">13:00 Sun</h1>
+      <div class="timeline-content">
+        <h1>End of Hacking!</h1>
+        <p>Keyboards down, commits pushed and apps deployed, get ready to present!</p>
+        <strong>Submit here:</strong> <a href="http://hacktheburgh.challengepost.com/" name="ChallengePost">http://hacktheburgh.challengepost.com/</a>
+      </div>
+    </div><!-- .timeline-block -->
+
+
+    <div class="timeline-block block-right">
+      <div class="timeline-img" style="border-color: #5bc0de;">
+        <span class="glyphicon glyphicon-cutlery">
+      </div>
+      <h1 class="timeline-time">13:00 Sun</h1>
+      <div class="timeline-content">
+        <h1>Lunch</h1>
+        <p>Selection of hot foods will be available.</p>
+        <table class="table">
+          <tr>
+            <td>Chille Con Carne <br><small>(gf, df)</small></td>
+            <td>Vegetable Bean Chilli <br><small>(vegan, df, gf)</small></td>
+            <td>Salad, Salsa, Cheese, Guacamole & Sour Cream</td>
+          </tr>
+        </table>
+      </div>
+    </div><!-- .timeline-block -->
+
+
+    <div class="timeline-block">
+      <div class="timeline-img" style="border-color: #5cb85c;">
+        <span class="glyphicon glyphicon-blackboard">
+      </div>
+      <h1 class="timeline-time">14:00 Sun</h1>
+      <div class="timeline-content">
+        <h1>Hack Presentations</h1>
+        <p>Teams will have 2 minutes to show off their hack to the judges and other hackers.</p>
+      </div>
+    </div><!-- .timeline-block -->
+
+
+    <div class="timeline-block block-right">
+      <div class="timeline-img" style="border-color: #5cb85c;">
+        <span class="glyphicon glyphicon-star">
+      </div>
+      <h1 class="timeline-time">15:00 Sun</h1>
+      <div class="timeline-content">
+        <h1>Prizes and Closing Talks</h1>
+        <p>The winners of the main prize and sponsor's challenges will be announced and will recieve their prizes.</p>
+      </div>
+    </div><!-- .timeline-block -->
+
+
+    <div class="timeline-block">
+      <div class="timeline-img" style="border-color: #d9534f;">
+        <span class="glyphicon glyphicon-hourglass">
+      </div>
+      <h1 class="timeline-time">16:00 Sun</h1>
+      <div class="timeline-content">
+        <h1>Doors Close</h1>
+        <p>The hack is over, thanks for coming! Coaches will be departing soon after 16:00.</p>
+      </div>
+    </div><!-- .timeline-block -->
+    
+    
+  </div><!-- .timeline -->
+</div>
+
+
+
+
+
 
 <br><br>
 <a name="map"></a>

@@ -5,6 +5,11 @@
  *
 **/
 
+body, html {
+    height: 100%;
+    
+}
+
 ::-webkit-scrollbar {
     width: 10px;
     max-width: 10px;
@@ -96,6 +101,39 @@ mark, .mark { background: #9AC2D9; color: #000; }
     background-color: #ED6550;
 }
 
+
+#carousel-photostream {
+    max-height: 100%;
+    height: 100% !important;
+    overflow: hidden;
+}
+
+#carousel-photostream .carousel-inner {
+    width: 100%;
+    height: 100% !important;
+}
+
+.carousel-inner .item {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.carousel-inner .item img {
+    min-width: 100% !important;
+    min-height: 100% !important;
+}
+
+.carousel-caption {
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow:
+   -2px -2px 3px rgba(0,0,0,0.8),  
+    2px -2px 3px rgba(0,0,0,0.8),
+    -2px 2px 3px rgba(0,0,0,0.8),
+     2px 2px 3px rgba(0,0,0,0.8);
+}
+
+
 .centre-block {
     display: block;
     margin-left: auto;
@@ -138,6 +176,10 @@ cite {
 	}
     }
 
+.container-gallery {
+    max-height: 800px;
+}
+
 
 #countdown {
     text-align: center;
@@ -158,6 +200,11 @@ cite {
 .fold-main {
     padding: 100px 0px;
     text-align: center;
+    position: relative;
+    top: -100%;
+    width: 25%;
+    left: 50%;
+    margin-left: -12.5%;
 }
 
     .fold-main h1,
@@ -174,11 +221,8 @@ cite {
     }
 
 .fold-wrapper {
-    /* fallback: */
-    background-color: #ED6550;
-    background-image: url('../img/arthurs-seat-2.jpg');
-    background-size: cover;
-    background-position: center center;
+    background-color: #000;
+    height: 100%;
 }
 
 
@@ -308,9 +352,7 @@ hr {
 .htb-logo {
     display: block;
     padding: 10px 0px;
-    width: 25vw;
-    min-width: 250px;
-    min-height: 250px;
+    width: 100%;
     margin: 0px auto;
 }
 
