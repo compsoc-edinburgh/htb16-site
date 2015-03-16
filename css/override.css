@@ -7,7 +7,6 @@
 
 body, html {
     height: 100%;
-    
 }
 
 ::-webkit-scrollbar {
@@ -33,18 +32,18 @@ mark, .mark { background: #9AC2D9; color: #000; }
 
 @media print {
 	a {
-    	color: #0000EE !important;
+    	    color: #0000EE !important;
 	}
 	
 	a[href]:after {
-    	content: "";
-    	color: #0000EE !important;
+    	    content: "";
+    	    color: #0000EE !important;
 	}
 	
 	p a[href]:after {
-		content: " (" attr(href) ")";	
-		font-size: 90%;
-		font-weight: normal;
+	    content: " (" attr(href) ")";	
+	    font-size: 90%;
+	    font-weight: normal;
 	}
 }
 
@@ -121,18 +120,9 @@ mark, .mark { background: #9AC2D9; color: #000; }
 .carousel-inner .item img {
     min-width: 100% !important;
     min-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
 }
-
-.carousel-caption {
-    font-weight: bold;
-    font-size: 20px;
-    text-shadow:
-   -2px -2px 3px rgba(0,0,0,0.8),  
-    2px -2px 3px rgba(0,0,0,0.8),
-    -2px 2px 3px rgba(0,0,0,0.8),
-     2px 2px 3px rgba(0,0,0,0.8);
-}
-
 
 .centre-block {
     display: block;
@@ -198,13 +188,14 @@ cite {
 
 
 .fold-main {
-    padding: 100px 0px;
+    padding: 0px;
     text-align: center;
     position: relative;
-    top: -100%;
+    top: -50%;
     width: 25%;
     left: 50%;
     margin-left: -12.5%;
+    margin-top: -12.5%;
 }
 
     .fold-main h1,
@@ -213,10 +204,28 @@ cite {
 	text-shadow: 0px 0px 8px #EEE;
     }
 
-     /* Screen XS */
+    .htb-logo {
+        display: block;
+        padding: 10px 0px;
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    /* Screen MD */
+    @media(max-width: 991px){
+        .fold-main {
+	    width: 40%;
+            margin-left: -20%;
+            margin-top: -20%;
+	}
+    }
+
+    /* Screen XS */
     @media (max-width: 480px) {
 	.fold-main {
-	    padding: 60px 0px;
+	    width: 75%;
+            margin-left: -37.5%;
+            margin-top: -37.5%;
 	}
     }
 
@@ -349,18 +358,6 @@ hr {
     border-top-width: 5px;
 }
 
-.htb-logo {
-    display: block;
-    padding: 10px 0px;
-    width: 100%;
-    margin: 0px auto;
-}
-
-@media(max-width: 480px){
-    .htb-logo {
-        
-    }
-}
 
 iframe {
 	border: 0 !important;
