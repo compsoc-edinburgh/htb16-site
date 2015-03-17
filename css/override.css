@@ -100,6 +100,29 @@ mark, .mark { background: #9AC2D9; color: #000; }
     background-color: #ED6550;
 }
 
+.card {
+    margin-top: 20px;
+    -webkit-box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:    0px 3px 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow:         0px 3px 2px 0px rgba(0, 0, 0, 0.2);
+    min-height: 80px;
+}
+
+    .card-content {
+        padding: 15px;
+        color: #555;
+        font-size: 12px;
+    }
+
+    .card-content h3 {
+        font-weight: normal;
+        color: #111;
+    }
+
+    .card-content aside {
+        color: #888;
+        padding: 5px 0px;
+    }
 
 #carousel-photostream {
     max-height: 100%;
@@ -122,6 +145,12 @@ mark, .mark { background: #9AC2D9; color: #000; }
     min-height: 100% !important;
     width: auto !important;
     height: auto !important;
+    /* Push actual image off to the right... */
+    padding-left: 100%;
+    box-sizing: border-box;
+    /* Set background up for the inline src */
+    background-position: center center;
+    background-size: cover;
 }
 
 .centre-block {
@@ -207,6 +236,7 @@ cite {
     .htb-logo {
         display: block;
         padding: 10px 0px;
+        padding-bottom: 50px;
         width: 100%;
         margin: 0px auto;
     }
@@ -563,10 +593,21 @@ iframe {
     border-radius: 0px;
 }
 
+
+.ribbon {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: url('../img/winner-ribbon.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+
 .timeline {
-      position: relative;
-      margin: 10px 0px;
-      padding: 20px 0px;
+    position: relative;
+    margin: 10px 0px;
+    padding: 20px 0px;
 }
 
 .timeline::before {

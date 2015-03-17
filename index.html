@@ -19,12 +19,12 @@ title: Home
       </div-->
       
       <div class="item active">
-          <img src="{{ site.baseurl }}/img/arthurs-seat-2.jpg" alt="...">
+          <img src="{{ site.baseurl }}/img/arthurs-seat-2.jpg" style="background-image: url('{{ site.baseurl }}/img/arthurs-seat-2.jpg');" alt="...">
       </div>
       
       {% for image in site.data.gallery %}
       <div class="item">
-        <img src="{{ site.baseurl }}/img/gallery/{{ image.name }}.jpg" class="img-responsive" alt="...">
+        <img src="{{ site.baseurl }}/img/gallery/{{ image.name }}.jpg" style="background-image: url('{{ site.baseurl }}/img/gallery/{{ image.name }}.jpg');" class="img-responsive" alt="...">
         <div class="carousel-caption">
           Image Credit: {{ image.credit }}
         </div>
@@ -60,11 +60,121 @@ title: Home
 {% include nav.html %}
 
 
-<!--div class="container">
-  <div class="centre-block">
-    <a href="" class="btn btn-danger btn-lg btn-signup">Coming Soon</a>
-  </div>
-</div-->
+<div class="container">
+  
+  <h1 class="jumbo">2015 Winners</h1>
+  <h4 class="centre-block">See all the hacks on <a href="http://hacktheburgh.challengepost.com">ChallengePost</a></h4>
+  
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="card">
+        <aside class="ribbon"></aside>
+        <img class="img-responsive" src="{{ site.baseurl }}/img/hacks/sourcefetch.jpg" alt="SourceFetch">
+        <div class="card-content">
+          <h3>SourceFetch</h3>
+          <p>SourceFetch is an online service and Sublime Text plugin that allows you to turn descriptions of problems into actual 
+            working source code. SourceFetch works with every language, and gives incredibly accurate results.
+          <a href="http://challengepost.com/software/sourcefetch"> More...</a></p>
+          <aside>
+            Overall 1st Place - J.P.Morgan
+          </aside>
+          <aside>
+            Nick Tikhonov, Zig Rab, Maria Kustikova &amp; Michael Sime
+          </aside>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-sm-6 col-md-4">
+      <div class="card">
+        <aside class="ribbon"></aside>
+        <img class="img-responsive" src="{{ site.baseurl }}/img/hacks/samplefinger.jpg" alt="SampleFinger">
+        <div class="card-content">
+          <h3>SampleFinger</h3>
+          <p>Starting from the idea of using the hands to control multiple independent sounds, we developed this into a 5-track 
+            looping/scrubbing sampler, controlled exclusively through the use of the hands, sensed by the Leap Motion. Hilarity ensued.
+          <a href="http://challengepost.com/software/samplefinger"> More...</a></p>
+          <aside>
+            Best Use of the Leap Motion - J.P.Morgan
+          </aside>
+          <aside>
+            Linus Heckerman &amp; 3 others...
+          </aside>
+        </div>
+      </div>
+    </div>
+    
+    <div class="clearfix visible-sm"></div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="card">
+        <aside class="ribbon"></aside>
+        <img class="img-responsive" src="{{ site.baseurl }}/img/hacks/coolbox.jpg" alt="CoolBox">
+        <div class="card-content">
+          <h3>CoolBox</h3>
+          <p>We often find ourselves disagreeing with the music played on nights out and at parties... SMS is very common 
+            (everyone with a mobile phone has access!)<a href="http://challengepost.com/software/coolbox-iwsvj"> More...</a></p>
+          <p></p>
+          <aside>
+            Best use of the Twilio API
+          </aside>
+          <aside>
+            W. Scott Maxwell, Jordan Duncan, Marius Vinickis &amp; Domantas Jurkus
+        </div>
+      </div>
+    </div>
+    
+    <div class="clearfix hidden-sm hidden-xs"></div>
+
+    <div class="col-md-2 hidden-sm hidden-xs"></div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="card">
+        <aside class="ribbon"></aside>
+        <img class="img-responsive" src="{{ site.baseurl }}/img/hacks/healthmotion.jpg" alt="HealthMotion">
+        <div class="card-content">
+          <h3>HealthMotion</h3>
+          <p>The all new communication method between patients and medical staff using leap motion technology.</p>
+          <p>Uses gesture detection on the leap motion controller to alert medical staff to the needs of patients that may be 
+            incapacitated or patients with limited movement.<a href="http://challengepost.com/software/health-motion-apyb5"> More...</a></p>
+          <aside>
+            Metaswitch - Best hack forCommunications Enhancements
+          </aside>
+          <aside>
+            Faisal Choura, Firas Altayeb, Harkamal Singh
+          </aside>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="clearfix visible-sm"></div>
+    <div class="col-sm-3 visible-sm"></div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="card">
+        <aside class="ribbon"></aside>
+        <img class="img-responsive" src="{{ site.baseurl }}/img/hacks/crowdsmile.jpg" alt="CrowdSmile">
+        <div class="card-content">
+          <h3>CrowdSmile</h3>
+          <p>magine you are feeling down one day and you want to cheer yourself up. Just tell us your location and we'll 
+            generate a special greeting for you. Using Bloomberg's API we've developed an algorithm that decides how 
+            likely it is that you are sad based on environmental factors.</p>
+          <p>The sadder you are, the more likely it is that you will receive your greeting sooner. When the time arrives 
+            our sad hero receives a phone call from Twilio! That mixed tune is then played over the phone and thus sadness is cured!
+          <a href="http://challengepost.com/software/crowdsmile"> More...</a></p>
+          <aside>
+            Best use of the Bloomberg API
+          </aside>
+          <aside>
+            Ian Denev, Atanas Penchev, Brad Gray &amp; Jiajun Xiao 
+          </aside>
+        </div>
+      </div>
+    </div>
+    
+  </div><!-- /.row -->
+</div>
 
 
 
