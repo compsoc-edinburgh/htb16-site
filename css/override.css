@@ -389,7 +389,7 @@ footer {
 .email{
     position:absolute;
     right:30px;
-
+    color: #888 !important;
 }
 
 
