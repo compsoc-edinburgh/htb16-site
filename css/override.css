@@ -35,6 +35,17 @@ body, html {
 
 }
 
+.mlh_badge{
+    position:fixed;
+    top:0;
+    right:50px;
+    max-width:100px;
+    width:10%;
+    min-width: 60px;
+    display:block;
+    z-index:10000; /* whai?? */
+}
+
 #img_background{
     -webkit-filter: blur(5px);
     -moz-filter: blur(5px);
