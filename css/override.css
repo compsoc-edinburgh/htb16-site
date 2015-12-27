@@ -404,6 +404,13 @@ footer {
     right:30px;
 }
 
+.section{
+    width:100%
+    background-color: #ECF1EF; //match the colour of the floating box
+    font-family: "Raleway",Helvetica,Arial,sans-serif;
+
+}
+
 
 .google-maps {
     position: relative;
