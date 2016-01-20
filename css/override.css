@@ -407,10 +407,11 @@ footer {
     background-color: #ECF1EF; //match the colour of the floating box
     font-family: "Raleway",Helvetica,Arial,sans-serif;
     margin-bottom:5%;
+    padding-bottom:2%;
 }
 
 .mugshot{
-    width:40%;
+    width:20%;
     text-align: center;
     display: block;
     margin-top: 5%;
