@@ -63,10 +63,17 @@ body, html {
 .tagline{
     color:#D3371E;
     text-align:center;
-    font-family: fifteen;
-    font-size:600%;
+    font-size:200%;
     font-weight:600;
+    font-family: '0xA000Regular';
 }
+
+hr {
+    width:50%;
+    height:50%;
+
+}
+
 
 
 /*==================================================
