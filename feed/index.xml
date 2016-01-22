@@ -12,7 +12,7 @@ layout: none
   <id>{{ site.url }}</id>
   <author>
     <name>{{ site.author }}</name>
-  </author>	
+  </author>
   {% for post in site.posts limit:20 %}
     <entry>
       <title>{{ post.title }}</title>

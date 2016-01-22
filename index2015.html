@@ -5,23 +5,23 @@ title: Home
 
 
 <div class="fold-wrapper">
-  
+
   <div id="carousel-photostream" class="carousel slide" data-ride="carousel">
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-      
+
       <!--div class="item">
           <img src="{{ site.baseurl }}/img/gallery/" alt="...">
           <div class="carousel-caption">
-            
+
           </div>
       </div-->
-      
+
       <div class="item active">
           <img src="{{ site.baseurl }}/img/arthurs-seat-2.jpg" style="background-image: url('{{ site.baseurl }}/img/arthurs-seat-2.jpg');" alt="...">
       </div>
-      
+
       {% for image in site.data.gallery %}
       <div class="item">
         <img src="{{ site.baseurl }}/img/gallery/{{ image.name }}.jpg" style="background-image: url('{{ site.baseurl }}/img/gallery/{{ image.name }}.jpg');" class="img-responsive" alt="...">
@@ -30,7 +30,7 @@ title: Home
         </div>
       </div>
       {% endfor %}
-      
+
     </div>
 
     <!-- Controls -->
@@ -51,20 +51,20 @@ title: Home
   <!--div class="container">
       <div class="fold-main">
         <img class="img-responsive htb-logo" src="{{ site.baseurl }}/img/HackTheBurgh-round-Spray-web.png" alt="Hack the 'Burgh">
-        
+
       </div>
   </div-->
-  
+
 </div><!-- /.fold-wrapper -->
 
 {% include nav.html %}
 
 
 <div class="container">
-  
+
   <h1 class="jumbo">2015 Winners</h1>
   <h4 class="centre-block">See all the hacks on <a href="http://hacktheburgh.challengepost.com">ChallengePost</a></h4>
-  
+
   <div class="row">
     <div class="col-sm-6 col-md-4">
       <div class="card">
@@ -72,7 +72,7 @@ title: Home
         <img class="img-responsive" src="{{ site.baseurl }}/img/hacks/sourcefetch.jpg" alt="SourceFetch">
         <div class="card-content">
           <h3>SourceFetch</h3>
-          <p>SourceFetch is an online service and Sublime Text plugin that allows you to turn descriptions of problems into actual 
+          <p>SourceFetch is an online service and Sublime Text plugin that allows you to turn descriptions of problems into actual
             working source code. SourceFetch works with every language, and gives incredibly accurate results.
           <a href="http://challengepost.com/software/sourcefetch"> More...</a></p>
           <aside>
@@ -84,14 +84,14 @@ title: Home
         </div>
       </div>
     </div>
-    
+
     <div class="col-sm-6 col-md-4">
       <div class="card">
         <aside class="ribbon"></aside>
         <img class="img-responsive" src="{{ site.baseurl }}/img/hacks/samplefinger.jpg" alt="SampleFinger">
         <div class="card-content">
           <h3>SampleFinger</h3>
-          <p>Starting from the idea of using the hands to control multiple independent sounds, we developed this into a 5-track 
+          <p>Starting from the idea of using the hands to control multiple independent sounds, we developed this into a 5-track
             looping/scrubbing sampler, controlled exclusively through the use of the hands, sensed by the Leap Motion. Hilarity ensued.
           <a href="http://challengepost.com/software/samplefinger"> More...</a></p>
           <aside>
@@ -103,7 +103,7 @@ title: Home
         </div>
       </div>
     </div>
-    
+
     <div class="clearfix visible-sm"></div>
 
     <div class="col-sm-6 col-md-4">
@@ -112,7 +112,7 @@ title: Home
         <img class="img-responsive" src="{{ site.baseurl }}/img/hacks/coolbox.jpg" alt="CoolBox">
         <div class="card-content">
           <h3>CoolBox</h3>
-          <p>We often find ourselves disagreeing with the music played on nights out and at parties... SMS is very common 
+          <p>We often find ourselves disagreeing with the music played on nights out and at parties... SMS is very common
             (everyone with a mobile phone has access!)<a href="http://challengepost.com/software/coolbox-iwsvj"> More...</a></p>
           <p></p>
           <aside>
@@ -123,7 +123,7 @@ title: Home
         </div>
       </div>
     </div>
-    
+
     <div class="clearfix hidden-sm hidden-xs"></div>
 
     <div class="col-md-2 hidden-sm hidden-xs"></div>
@@ -135,7 +135,7 @@ title: Home
         <div class="card-content">
           <h3>HealthMotion</h3>
           <p>The all new communication method between patients and medical staff using leap motion technology.</p>
-          <p>Uses gesture detection on the leap motion controller to alert medical staff to the needs of patients that may be 
+          <p>Uses gesture detection on the leap motion controller to alert medical staff to the needs of patients that may be
             incapacitated or patients with limited movement.<a href="http://challengepost.com/software/health-motion-apyb5"> More...</a></p>
           <aside>
             Metaswitch - Best hack forCommunications Enhancements
@@ -146,8 +146,8 @@ title: Home
         </div>
       </div>
     </div>
-    
-    
+
+
     <div class="clearfix visible-sm"></div>
     <div class="col-sm-3 visible-sm"></div>
 
@@ -157,22 +157,22 @@ title: Home
         <img class="img-responsive" src="{{ site.baseurl }}/img/hacks/crowdsmile.jpg" alt="CrowdSmile">
         <div class="card-content">
           <h3>CrowdSmile</h3>
-          <p>magine you are feeling down one day and you want to cheer yourself up. Just tell us your location and we'll 
-            generate a special greeting for you. Using Bloomberg's API we've developed an algorithm that decides how 
+          <p>magine you are feeling down one day and you want to cheer yourself up. Just tell us your location and we'll
+            generate a special greeting for you. Using Bloomberg's API we've developed an algorithm that decides how
             likely it is that you are sad based on environmental factors.</p>
-          <p>The sadder you are, the more likely it is that you will receive your greeting sooner. When the time arrives 
+          <p>The sadder you are, the more likely it is that you will receive your greeting sooner. When the time arrives
             our sad hero receives a phone call from Twilio! That mixed tune is then played over the phone and thus sadness is cured!
           <a href="http://challengepost.com/software/crowdsmile"> More...</a></p>
           <aside>
             Best use of the Bloomberg API
           </aside>
           <aside>
-            Ian Denev, Atanas Penchev, Brad Gray &amp; Jiajun Xiao 
+            Ian Denev, Atanas Penchev, Brad Gray &amp; Jiajun Xiao
           </aside>
         </div>
       </div>
     </div>
-    
+
   </div><!-- /.row -->
 </div>
 
@@ -189,21 +189,21 @@ title: Home
       <h1 class="jumbo"><span class="glyphicon glyphicon-hourglass"></span></h1>
       <h1 class="centre-block">30 Hours</h1>
       <p class="centre-block">
-	From 10am on Saturday to 4pm on Sunday, hackers will be labouring around the clock to bring their hacks to life. We've got some neat Hardware and APIs lined up from our sponsors for you to hack on.
+  From 10am on Saturday to 4pm on Sunday, hackers will be labouring around the clock to bring their hacks to life. We've got some neat Hardware and APIs lined up from our sponsors for you to hack on.
       </p>
     </div>
     <div class="col-sm-4">
       <h1 class="jumbo"><span class="glyphicon glyphicon-console"></span></h1>
       <h1 class="centre-block">100 Hackers</h1>
       <p class="centre-block">
-	We'll be opening our doors to no less than 100 keen hackers, intent on producing some great hacks. There'll be tonnes of free merch, food and drink to keep you going.
+  We'll be opening our doors to no less than 100 keen hackers, intent on producing some great hacks. There'll be tonnes of free merch, food and drink to keep you going.
       </p>
     </div>
     <div class="col-sm-4">
       <h1 class="jumbo"><span class="glyphicon glyphicon-thumbs-up"></span></h1>
       <h1 class="centre-block">Beginner Friendly</h1>
       <p class="centre-block">
-	Whether this is your first hack or your fiftieth, we'll have mentors from most of our sponsors here to help you learn and improve your hacking & coding skills.
+  Whether this is your first hack or your fiftieth, we'll have mentors from most of our sponsors here to help you learn and improve your hacking & coding skills.
       </p>
     </div>
   </div>
@@ -214,120 +214,120 @@ title: Home
   <a name="faq"></a>
   <div class="container">
     <h1 class="jumbo jumbo-inv">FAQ</h1>
-    
+
     <div class="row">
       <div class="col-sm-6">
-	<h2>What is "Hack the Burgh"?</h2>
-	<p>Hack the Burgh is a hackathon where students come together, team up and collaborate to build cool stuff with data and challenges provided by our sponsors.</p>
+  <h2>What is "Hack the Burgh"?</h2>
+  <p>Hack the Burgh is a hackathon where students come together, team up and collaborate to build cool stuff with data and challenges provided by our sponsors.</p>
       </div>
       <div class="col-sm-6">
-	<h2>How much does it cost?</h2>
-	<p><strong>Hack the Burgh is completely free to attend.</strong> However, tickets are extremely limited and are only available on a first-come-first-serve basis.</p>
-      </div>
-    </div><!-- /.row -->
-    
-    <div class="row">
-      <div class="col-sm-6">
-	<h2>Do I need to have a team beforehand?</h2>
-	<p>You're welcome to make a team before the event. But loads of people come without a team. At the start of the event, we'll help everyone find a team. Your team members can be from other Universities. One of the best things about hackathons is meeting hackers from all over the country.</p>
-      </div>
-      <div class="col-sm-6">
-	<h2>I've never written a line of code. Help?</h2>
-	<p>Even more the reason to come! We'll have mentors on site to show you the ropes, and you'll probably get picked up by a team of hackers who can teach you a whole load in a short amount of time. Everyone is friendly and ready to help. Just be ready for some intense learning!</p>
-      </div>
-    </div><!-- /.row -->
-    
-    <div class="row">
-      <div class="col-sm-6">
-	<h2>Hackawhat?</h2>
-	<p>A hackathon is a ~24 hour long programming event. Hundreds of passionate students come together, form teams, share ideas, and help each other build innovative applications. It's a fantastic opportunity to meet new people, learn from mentors, and make cool stuff. They're very beginner friendly. Everybody is there to help each other and have fun. Check <a href="https://medium.com/hackathons-anonymous/wtf-is-a-hackathon-92668579601">this out</a> for more info.</p>
-	<h2>So what's MLH</h2>
-	<p>MLH Is Major League Hacking - A university hackathon league designed to empower and help hackathons be bigger and better than ever. There are MLH hacks all around the country, so if you can't come to HTB then there are loads more to check out.</p>
-      </div>
-      <div class="col-sm-6">
-	<div class="iframe-responsive">
-	  <iframe width="560" height="315" src="//www.youtube.com/embed/3NYHIxF6IEU" frameborder="0" allowfullscreen></iframe>
-	</div>
+  <h2>How much does it cost?</h2>
+  <p><strong>Hack the Burgh is completely free to attend.</strong> However, tickets are extremely limited and are only available on a first-come-first-serve basis.</p>
       </div>
     </div><!-- /.row -->
 
     <div class="row">
       <div class="col-sm-6">
-	<h2>Does everyone on my team have to be from the same Uni?</h2>
-	<p>Nope! In fact we encourage people to try and collaborate with people from different places and backgrounds - it often makes for more interesting hacks and is an awesome way of meeting people.</p>
+  <h2>Do I need to have a team beforehand?</h2>
+  <p>You're welcome to make a team before the event. But loads of people come without a team. At the start of the event, we'll help everyone find a team. Your team members can be from other Universities. One of the best things about hackathons is meeting hackers from all over the country.</p>
       </div>
       <div class="col-sm-6">
-	<h2>What do I need to bring?</h2>
-	<p>A laptop is pretty much essential... Some adventurous types bring desktops although there's not nearly enough space for everyone to do that. Probably a phone charger, assorted cables and anything else for electronics you're bringing. Warm and comfortable clothes, given the amount of time you're at the event... Toiletries and a change of clothes are important too! (Also please don't bring extension leads - The power system won't be able cope with more load). There <strong>will</strong> be engineers and recruiters from a bunch of companies here as well so if you're looking for a Job or Internship you might consider touching up your CV.</p>
-      </div>
-    </div><!-- /.row -->
-
-    <div class="row">
-      <div class="col-sm-6">
-	<h2>How big can my team be?</h2>
-	<p>Teams can be any size up to four people - Over that and you're not eligible for any of the prizes. Remember that smaller teams will have to do more per head than larger teams.</p>
-      </div>
-      <div class="col-sm-6">
-	<h2>What time should I arrive?</h2>
-	<p>Please aim to be at the venue between 9am and 10am on the Saturday. We want to give you as long as possible to hack so API & data presentations, as well as welcome talks will start at 10.</p>
+  <h2>I've never written a line of code. Help?</h2>
+  <p>Even more the reason to come! We'll have mentors on site to show you the ropes, and you'll probably get picked up by a team of hackers who can teach you a whole load in a short amount of time. Everyone is friendly and ready to help. Just be ready for some intense learning!</p>
       </div>
     </div><!-- /.row -->
 
     <div class="row">
       <div class="col-sm-6">
-	<h2>Who Can Attend?</h2>
-	<p>MLH Hacks are open to any student currently enrolled in full time further education (University). <strong>People who graduated less than a year ago (after March 2014) are also eligible.</strong> Please note we are unable to facilitate those under the age of 18.</p>
+  <h2>Hackawhat?</h2>
+  <p>A hackathon is a ~24 hour long programming event. Hundreds of passionate students come together, form teams, share ideas, and help each other build innovative applications. It's a fantastic opportunity to meet new people, learn from mentors, and make cool stuff. They're very beginner friendly. Everybody is there to help each other and have fun. Check <a href="https://medium.com/hackathons-anonymous/wtf-is-a-hackathon-92668579601">this out</a> for more info.</p>
+  <h2>So what's MLH</h2>
+  <p>MLH Is Major League Hacking - A university hackathon league designed to empower and help hackathons be bigger and better than ever. There are MLH hacks all around the country, so if you can't come to HTB then there are loads more to check out.</p>
       </div>
       <div class="col-sm-6">
-	<h2>Food?!</h2>
-	<p>The event is fully catered - we'll be providing Lunch, Dinner, Midnight Pizza, Breakfast and Lunch to hackers. Also we're aiming for InfiniteCoke&trade; and InfiniteRedBull&trade; alongside a stream of Tea, Coffee and snacks to keep you going through the night.</p>
-      </div>
-    </div><!-- /.row -->
-
-    <div class="row">
-      <div class="col-sm-6">
-	<h2>Hardware Hacks</h2>
-	<p>We are super excited to be able to have a ton of hardware available to hack on - Oculus rifts, Leap motions, Thalmic Myos, Pebble smart watches and more! We'd just ask that people don't bring soldering irons, heat guns and other power tools, as those will almost certainly soak people with the sprinkler system.</p>
-      </div>
-      <div class="col-sm-6">
-	<h2>Free Stash/Merch/Swag?</h2>
-	<p>Yeah, we'll bet! You can expect t-shirts, stickers and other freebies at the hack. Most of our sponsors and partners will be bringing along a heap of stash just for you.</p>
+  <div class="iframe-responsive">
+    <iframe width="560" height="315" src="//www.youtube.com/embed/3NYHIxF6IEU" frameborder="0" allowfullscreen></iframe>
+  </div>
       </div>
     </div><!-- /.row -->
 
     <div class="row">
       <div class="col-sm-6">
-	<h2>Can I work on an existing project?</h2>
-	<p>Sorry, nope. We require teams that want to be eligible for prizes don't write a single line of code before the hack. This is cheating and won't go down well with the other teams - unless you don't want to compete but where's the fun in that?!</p>
+  <h2>Does everyone on my team have to be from the same Uni?</h2>
+  <p>Nope! In fact we encourage people to try and collaborate with people from different places and backgrounds - it often makes for more interesting hacks and is an awesome way of meeting people.</p>
       </div>
       <div class="col-sm-6">
-	<h2>Code of Conduct</h2>
-	<p>MLH is dedicated to providing a fun, harassment-free experience for everyone. We expect all of our attendees, sponsors, volunteers, and staff to be respectful and considerate of others. They are all required to agree with <a href="http://hackcodeofconduct.org/majorleaguehacking">this code of conduct.</a> You should read this code. Organisers will enforce it throughout the event.</p>
+  <h2>What do I need to bring?</h2>
+  <p>A laptop is pretty much essential... Some adventurous types bring desktops although there's not nearly enough space for everyone to do that. Probably a phone charger, assorted cables and anything else for electronics you're bringing. Warm and comfortable clothes, given the amount of time you're at the event... Toiletries and a change of clothes are important too! (Also please don't bring extension leads - The power system won't be able cope with more load). There <strong>will</strong> be engineers and recruiters from a bunch of companies here as well so if you're looking for a Job or Internship you might consider touching up your CV.</p>
       </div>
     </div><!-- /.row -->
-
-    
-    <div class="row">
-      <div class="col-sm-6">
-	<h2>Can I volunteer?</h2>
-	<p>Thanks for wanting to be a part of the team, but we're full up as far as volunteers go :( Just enjoy the hack!</p>
-      </div>
-      <div class="col-sm-6">
-	<h2>Can I sleep at the venue?</h2>
-	<p>Sure, we'll be sleeping people in the auditorium away from the hacking. Just make sure you bring everything you need to be comfortable - there aren't any beds. But It's a proper hackathon - a lot of people will work through the night!</p>
-      </div>
-    </div><!-- /.row -->
-    
-
 
     <div class="row">
       <div class="col-sm-6">
-	<h2>Transport</h2>
-	<p>MLH can put on coaches if there are enough people (around 30-40) needing return transport to Edinburgh - We'll keep people informed if coaches got arranged.</p>
+  <h2>How big can my team be?</h2>
+  <p>Teams can be any size up to four people - Over that and you're not eligible for any of the prizes. Remember that smaller teams will have to do more per head than larger teams.</p>
       </div>
       <div class="col-sm-6">
-	<h2>Can I sponsor this event?</h2>
-	<p>Yeah! We'd really appreciate anyone who wants to help make the hack possible reaching out. Hackathons are awesome for those that hack but also a really great platform to display who you are and what you do to a bunch of students that are clearly showing they love to make cool stuff. Just send an email to <a href="mailto:hello@hacktheburgh.com">hello@hacktheburgh.com</a></p>
+  <h2>What time should I arrive?</h2>
+  <p>Please aim to be at the venue between 9am and 10am on the Saturday. We want to give you as long as possible to hack so API & data presentations, as well as welcome talks will start at 10.</p>
+      </div>
+    </div><!-- /.row -->
+
+    <div class="row">
+      <div class="col-sm-6">
+  <h2>Who Can Attend?</h2>
+  <p>MLH Hacks are open to any student currently enrolled in full time further education (University). <strong>People who graduated less than a year ago (after March 2014) are also eligible.</strong> Please note we are unable to facilitate those under the age of 18.</p>
+      </div>
+      <div class="col-sm-6">
+  <h2>Food?!</h2>
+  <p>The event is fully catered - we'll be providing Lunch, Dinner, Midnight Pizza, Breakfast and Lunch to hackers. Also we're aiming for InfiniteCoke&trade; and InfiniteRedBull&trade; alongside a stream of Tea, Coffee and snacks to keep you going through the night.</p>
+      </div>
+    </div><!-- /.row -->
+
+    <div class="row">
+      <div class="col-sm-6">
+  <h2>Hardware Hacks</h2>
+  <p>We are super excited to be able to have a ton of hardware available to hack on - Oculus rifts, Leap motions, Thalmic Myos, Pebble smart watches and more! We'd just ask that people don't bring soldering irons, heat guns and other power tools, as those will almost certainly soak people with the sprinkler system.</p>
+      </div>
+      <div class="col-sm-6">
+  <h2>Free Stash/Merch/Swag?</h2>
+  <p>Yeah, we'll bet! You can expect t-shirts, stickers and other freebies at the hack. Most of our sponsors and partners will be bringing along a heap of stash just for you.</p>
+      </div>
+    </div><!-- /.row -->
+
+    <div class="row">
+      <div class="col-sm-6">
+  <h2>Can I work on an existing project?</h2>
+  <p>Sorry, nope. We require teams that want to be eligible for prizes don't write a single line of code before the hack. This is cheating and won't go down well with the other teams - unless you don't want to compete but where's the fun in that?!</p>
+      </div>
+      <div class="col-sm-6">
+  <h2>Code of Conduct</h2>
+  <p>MLH is dedicated to providing a fun, harassment-free experience for everyone. We expect all of our attendees, sponsors, volunteers, and staff to be respectful and considerate of others. They are all required to agree with <a href="http://hackcodeofconduct.org/majorleaguehacking">this code of conduct.</a> You should read this code. Organisers will enforce it throughout the event.</p>
+      </div>
+    </div><!-- /.row -->
+
+
+    <div class="row">
+      <div class="col-sm-6">
+  <h2>Can I volunteer?</h2>
+  <p>Thanks for wanting to be a part of the team, but we're full up as far as volunteers go :( Just enjoy the hack!</p>
+      </div>
+      <div class="col-sm-6">
+  <h2>Can I sleep at the venue?</h2>
+  <p>Sure, we'll be sleeping people in the auditorium away from the hacking. Just make sure you bring everything you need to be comfortable - there aren't any beds. But It's a proper hackathon - a lot of people will work through the night!</p>
+      </div>
+    </div><!-- /.row -->
+
+
+
+    <div class="row">
+      <div class="col-sm-6">
+  <h2>Transport</h2>
+  <p>MLH can put on coaches if there are enough people (around 30-40) needing return transport to Edinburgh - We'll keep people informed if coaches got arranged.</p>
+      </div>
+      <div class="col-sm-6">
+  <h2>Can I sponsor this event?</h2>
+  <p>Yeah! We'd really appreciate anyone who wants to help make the hack possible reaching out. Hackathons are awesome for those that hack but also a really great platform to display who you are and what you do to a bunch of students that are clearly showing they love to make cool stuff. Just send an email to <a href="mailto:hello@hacktheburgh.com">hello@hacktheburgh.com</a></p>
       </div>
     </div><!-- /.row -->
 
@@ -345,16 +345,16 @@ title: Home
   <!--div class="row">
       <div class="col-sm-6 padder">
         <a href="">
-	  <img class="img-responsive" src="{{site.baseurl}}/img/" style="width:100%;" alt="">
+    <img class="img-responsive" src="{{site.baseurl}}/img/" style="width:100%;" alt="">
         </a>
       </div>
       <div class="col-sm-6 padder">
         <a href="">
-	  <img class="img-responsive" src="{{site.baseurl}}/img/" style="width:100%;" alt="">
+    <img class="img-responsive" src="{{site.baseurl}}/img/" style="width:100%;" alt="">
         </a>
       </div>
 </div-->
-  
+
   <div>
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
@@ -364,35 +364,35 @@ title: Home
         </div>
         <div class="col-sm-8">
           <a href="https://www.jpmorgan.com/">
-	    <img class="img-responsive" src="{{site.baseurl}}/img/jpmorgan.png" style="width:100%;" alt="JPMorgan">
+      <img class="img-responsive" src="{{site.baseurl}}/img/jpmorgan.png" style="width:100%;" alt="JPMorgan">
           </a>
         </div>
         <div class="col-sm-2">
         </div>
       </div>
-      
+
       <div class="row">
         <div class="col-sm-6 padder">
           <a href="http://www.metaswitch.com/">
-	    <img class="img-responsive" src="{{site.baseurl}}/img/metaswitch.png" style="width:100%;" alt="MetaSwitch">
+      <img class="img-responsive" src="{{site.baseurl}}/img/metaswitch.png" style="width:100%;" alt="MetaSwitch">
           </a>
         </div>
         <div class="col-sm-6 padder">
           <a href="http://microsoft.com/university">
-	    <img class="img-responsive" src="{{site.baseurl}}/img/Microsoft.png" style="width:100%;" alt="Microsoft">
+      <img class="img-responsive" src="{{site.baseurl}}/img/Microsoft.png" style="width:100%;" alt="Microsoft">
           </a>
         </div>
       </div>
-      
+
       <div class="row">
         <div class="col-sm-6 padder">
           <a href="http://www.amazondc.com">
-	    <img class="img-responsive" src="{{site.baseurl}}/img/amazon.png" style="width:100%;" alt="Amazon Development Centre Scotland">
+      <img class="img-responsive" src="{{site.baseurl}}/img/amazon.png" style="width:100%;" alt="Amazon Development Centre Scotland">
           </a>
         </div>
         <div class="col-sm-6 padder">
           <a href="http://www.tmvse.com/">
-	    <img class="img-responsive" src="{{site.baseurl}}/img/toshiba.png" style="width:100%;" alt="Toshiba Medical Visualisation Systems Europe">
+      <img class="img-responsive" src="{{site.baseurl}}/img/toshiba.png" style="width:100%;" alt="Toshiba Medical Visualisation Systems Europe">
           </a>
         </div>
       </div>
@@ -400,20 +400,20 @@ title: Home
       <div class="row">
         <div class="col-sm-6 padder">
           <a href="http://bloomberg.com/rd">
-	    <img class="img-responsive" src="{{site.baseurl}}/img/Bloomberg.svg" style="width:100%; padding-top: 30px;" alt="Bloomberg">
+      <img class="img-responsive" src="{{site.baseurl}}/img/Bloomberg.svg" style="width:100%; padding-top: 30px;" alt="Bloomberg">
           </a>
         </div>
         <div class="col-sm-6 padder">
           <a href="http://capitalonecareers.co.uk/graduates">
-	    <img class="img-responsive" src="{{site.baseurl}}/img/capital-one.png" style="width:100%;" alt="Capital One">
+      <img class="img-responsive" src="{{site.baseurl}}/img/capital-one.png" style="width:100%;" alt="Capital One">
           </a>
         </div>
       </div>
-      
+
       <div class="row">
         <div class="col-sm-6 col-sm-offset-3 padder">
           <a href="https://www.twilio.com/">
-	    <img class="img-responsive" src="{{site.baseurl}}/img/Twilio.svg" style="width:100%;" alt="Twilio">
+      <img class="img-responsive" src="{{site.baseurl}}/img/Twilio.svg" style="width:100%;" alt="Twilio">
           </a>
         </div>
       </div>
@@ -445,25 +445,25 @@ title: Home
         <img class="img-responsive img-sponsor" src="{{site.baseurl}}/img/spark.png" alt="Spark">
       </div>
     </div>
-    
-    
+
+
     <hr>
     <h1 class="jumbo">Run By:</h1>
     <div class="row">
       <div class="col-sm-6 padder">
         <br>
         <a href="http://comp-soc.com">
-	  <img class="img-responsive" src="http://comp-soc.com/static/compsoc/img/compsoc.png" style="padding-top: 22px; width: 100%;" alt="University of Edinburgh Computing and AI Society">
+    <img class="img-responsive" src="http://comp-soc.com/static/compsoc/img/compsoc.png" style="padding-top: 22px; width: 100%;" alt="University of Edinburgh Computing and AI Society">
         </a>
       </div>
       <div class="col-sm-6 padder">
         <br>
         <a href="http://www.inf.ed.ac.uk">
-	  <img class="img-responsive" src="{{ site.baseurl }}/img/informatics.png" style="width: 100%;" alt="University of Edinburgh School of Informatics">
+    <img class="img-responsive" src="{{ site.baseurl }}/img/informatics.png" style="width: 100%;" alt="University of Edinburgh School of Informatics">
         </a>
       </div>
     </div><!-- /.row -->
-    
+
     <div class="row">
       <div class="col-sm-4"></div>
       <div class="col-sm-4">
@@ -490,8 +490,8 @@ title: Home
   <h1 class="jumbo">Schedule</h1>
   <div class="timeline">
     <div class="time-slider"></div>
-    
-    
+
+
     <div class="timeline-block">
       <div class="timeline-img" style="border-color: #5cb85c;">
         <span class="glyphicon glyphicon-hourglass">
@@ -502,8 +502,8 @@ title: Home
         <p>We will begin registration, please make sure you have Student ID and your ticket details (On a phone etc. is fine.)</p>
       </div>
     </div><!-- .timeline-block -->
-    
-    
+
+
     <div class="timeline-block block-right">
       <div class="timeline-img" style="border-color: #5cb85c;">
         <span class="glyphicon glyphicon-bullhorn">
@@ -533,8 +533,8 @@ title: Home
         </table>
       </div>
     </div><!-- .timeline-block -->
-    
-    
+
+
     <div class="timeline-block block-right">
       <div class="timeline-img" style="border-color: #5cb85c;">
         <span class="glyphicon glyphicon-console">
@@ -545,9 +545,9 @@ title: Home
         <p>Get going! Those with a team can get cracking, and we'll be doing an informal mixer and pitching session for people needing a team or more members.</p>
       </div>
     </div><!-- .timeline-block -->
-    
-    
-    
+
+
+
     <div class="timeline-block">
       <div class="timeline-img" style="border-color: #f0ad4e;">
         <span class="glyphicon glyphicon-calendar">
@@ -558,9 +558,9 @@ title: Home
         <p>Code in the Dark - re-create a webpage in HTML & CSS without a preview; This is guaranteed to be funny!</p>
       </div>
     </div><!-- .timeline-block -->
-    
-    
-    
+
+
+
     <div class="timeline-block block-right">
       <div class="timeline-img" style="border-color: #5bc0de;">
         <span class="glyphicon glyphicon-cutlery">
@@ -578,9 +578,9 @@ title: Home
         </table>
       </div>
     </div><!-- .timeline-block -->
-    
-    
-    
+
+
+
     <div class="timeline-block">
       <div class="timeline-img" style="border-color: #f0ad4e;">
         <span class="glyphicon glyphicon-calendar">
@@ -600,7 +600,7 @@ title: Home
       <h1 class="timeline-time">23:00 Sun</h1>
       <div class="timeline-content">
         <h1>Bloomberg Mini Event</h1>
-        <p>Finally Edinburgh Uni will be playing Werewolf on home turf! We welcome you 
+        <p>Finally Edinburgh Uni will be playing Werewolf on home turf! We welcome you
         to the village of Haskell Curry for a good game of lyhnching and werewolf murders!
         <br/>
         <small>(Werewolf aka Mafia...)</small>
@@ -624,8 +624,8 @@ title: Home
       </div>
     </div><!-- .timeline-block -->
 
-    
-    
+
+
     <div class="timeline-block block-right">
       <div class="timeline-img" style="border-color: #5bc0de;">
         <span class="glyphicon glyphicon-cutlery">
@@ -643,7 +643,7 @@ title: Home
         </table>
       </div>
     </div><!-- .timeline-block -->
-    
+
 
     <div class="timeline-block">
       <div class="timeline-img" style="border-color: #d9534f;">
@@ -711,8 +711,8 @@ title: Home
         <p>The hack is over, thanks for coming! Coaches will be departing soon after 16:00.</p>
       </div>
     </div><!-- .timeline-block -->
-    
-    
+
+
   </div><!-- .timeline -->
 </div>
 

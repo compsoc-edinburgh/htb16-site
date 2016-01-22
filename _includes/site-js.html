@@ -11,7 +11,7 @@ function initialize() {
         scrollwheel: false
     };
     var map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions);
-    
+
     var marker = new google.maps.Marker({
         position: infForum,
         map: map,
@@ -37,27 +37,27 @@ ga('send', 'pageview');
 /* Jquery stuff */
 
 $('a').click(function(){
-	$('html, body').animate({
-		scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
-	}, 500);
-	return false;
+  $('html, body').animate({
+    scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+  }, 500);
+  return false;
 });
 
 /* Scroll to top show/hide: */
 $(document).ready(function() {
-	$(window).scroll(function() {
-		if($(this).scrollTop() > 380){
-			$('.go-top').fadeIn(400);
-		} else {
-			$('.go-top').fadeOut(400);
-		}
-	});
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 380){
+      $('.go-top').fadeIn(400);
+    } else {
+      $('.go-top').fadeOut(400);
+    }
+  });
 
-	// Animate scroll to top
-	$('.go-top').click(function(){
-		$('html, body').animate({scrollTop : 0},800);
-		return false;
-	});
+  // Animate scroll to top
+  $('.go-top').click(function(){
+    $('html, body').animate({scrollTop : 0},800);
+    return false;
+  });
 })
 
 /* Formatting fixes for Posts: */
