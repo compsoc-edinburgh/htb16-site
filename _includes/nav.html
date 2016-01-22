@@ -9,23 +9,23 @@
         <span class="icon-bar"></span>
       </button>
     </div>
-    
+
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-	<!--{% for p in site.pages %}
-	<li {% if p.url == page.url %} class="active" {% endif %}>
-	  <a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
-	</li>
-	{% endfor %}-->
+  <!--{% for p in site.pages %}
+  <li {% if p.url == page.url %} class="active" {% endif %}>
+    <a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
+  </li>
+  {% endfor %}-->
 
-	
-	{% assign url = page.url|remove:'index.html' %}
-	{% for link in site.navigation %}
-	<li {% if page.url == link.url %}class="active"{% endif %}>
-	  <a href="{{ site.baseurl }}{{ link.url }}" title="{{ link.text }}">{{link.text}}</a>
-	</li>
-	{% endfor %}
+
+  {% assign url = page.url|remove:'index.html' %}
+  {% for link in site.navigation %}
+  <li {% if page.url == link.url %}class="active"{% endif %}>
+    <a href="{{ site.baseurl }}{{ link.url }}" title="{{ link.text }}">{{link.text}}</a>
+  </li>
+  {% endfor %}
       </ul>
 
     </div><!-- /.navbar-collapse -->
