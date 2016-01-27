@@ -30,3 +30,6 @@ paginate: 3
 paginate_path: "blog/page:num"
 markdown: kramdown
 permalink: pretty
+
+# Gems array
+gems: [jekyll-paginate]  # add this to fix the deprecated warning on the server
