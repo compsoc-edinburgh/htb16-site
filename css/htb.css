@@ -3,7 +3,7 @@
     padding-bottom: 5%;
 }
 
-.mlh_badge{
+.mlh_badge {
     position:fixed;
     top:0;
     right:50px;
@@ -13,11 +13,18 @@
     display:block;
     z-index:10000; /* whai?? */
 }
-.sponsors{
+.sponsors {
     padding-bottom:10%;
 }
 
-.blklogo{
+.blklogo {
     float:none;
     margin: 0 auto;
+    width: 40%;
+}
+
+.armlogo {
+    float: none;
+    margin: 0 auto;
+    width: 40%;
 }
