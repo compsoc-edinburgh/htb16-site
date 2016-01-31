@@ -12,3 +12,12 @@
     display:block;
     z-index:10000; /* whai?? */
 }
+.sponsors{
+    padding-top:5%;
+    padding-bottom:10%;
+}
+
+.blklogo{
+    float:none;
+    margin: 0 auto;
+}
