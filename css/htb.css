@@ -18,8 +18,12 @@
     position: relative;
 }
 
-.logo_bottom:hover {
+.logo_bottom {
     opacity: 0;
+}
+
+.logo_bottom:hover {
+    opacity: 1;
 }
 
 .mlh_badge {
