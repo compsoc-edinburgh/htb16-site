@@ -45,5 +45,11 @@
 .armlogo {
     float: none;
     margin: 0 auto;
-    width: 40%;
+    width: 70%;
+}
+
+.jpmlogo {
+    float: none;
+    margin: 0 auto;
+    width: 35%;
 }
