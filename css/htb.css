@@ -1,6 +1,25 @@
 .logo{
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity .4s ease-in-out;
+    -moz-transition: opacity .4s ease-in-out;
+    -o-transition: opacity .4s ease-in-out;
+    transition: opacity .4s ease-in-out;
+}
+
+.header-content-inner {
     padding-top: 5%;
-    padding-bottom: 5%;
+}
+
+.logo-content {
+    width: 504px;
+    height: 249px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo_bottom:hover {
+    opacity: 0;
 }
 
 .mlh_badge {
