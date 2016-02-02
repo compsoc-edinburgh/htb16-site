@@ -11,6 +11,18 @@
     padding-top: 5%;
 }
 
+@media (max-width: 420px) {
+    .header-content-inner {
+        padding-top: 35%;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 800px) {
+    .header-content-inner > p {
+        margin-bottom: 10px !important;
+    }
+}
+
 .logo-content {
     width: 504px;
     height: 249px;
