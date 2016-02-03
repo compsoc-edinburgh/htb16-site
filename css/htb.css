@@ -23,6 +23,13 @@
     }
 }
 
+@media (max-width: 767px){
+   .row.vertical-align { /*This is for the sponsor logos so they don't break on phones */
+        display: flex;
+        align-items: center;
+        } 
+}
+
 .logo-content {
     width: 504px;
     height: 249px;
