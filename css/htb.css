@@ -28,6 +28,7 @@
     height: 249px;
     margin: 0 auto;
     position: relative;
+    margin-bottom: 5%;
 }
 
 .logo_bottom {
@@ -70,7 +71,7 @@
     width: 35%;
 }
 
-/* Properties fore typed-cursor */
+/* Properties for typed-cursor */
 .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
