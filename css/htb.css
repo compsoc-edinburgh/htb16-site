@@ -93,3 +93,11 @@
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
+.sponsorlogos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
