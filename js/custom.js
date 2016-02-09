@@ -5,7 +5,8 @@ var Airhorn = function () {
     this.x = Math.random() * $(document).width();
     this.y = Math.random() * $(window).height();
 
-    this.airhorn_id = "airhorn" + this.airhorn_id;
+    this.airhorn_number = Airhorn.numAirhorns;
+    this.airhorn_id = "airhorn" + this.airhorn_number;
     Airhorn.numAirhorns++;
 
     this.elem = this.genElement();
