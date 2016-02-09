@@ -117,3 +117,10 @@
 .comic-sans{
     font-family: "Comic Sans MS", "Comic Sans", cursive !important;
 }
+
+.airhorn{
+    position: fixed;
+    left: 50%;
+    top: 5%;
+    max-width: 5%;
+}
