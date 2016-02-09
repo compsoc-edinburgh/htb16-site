@@ -51,6 +51,7 @@ $(document).keydown(function(e){
 function konami_entered(){
     ga('send', 'event', 'konami', 'konami_entered');
     $("body").addClass('comic-sans');
+    cornify_add();
     clippy.load('Clippy', function(agent) {
         agent.show();
         agent.moveTo($(document).width()-400, 50);
