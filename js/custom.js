@@ -18,12 +18,12 @@ $(document).keydown(function(e){
 function konami_entered(){
     ga('send', 'event', 'konami', 'konami_entered');
     $("body").addClass('comic-sans');
-    air_horns();
     clippy.load('Clippy', function(agent) {
         agent.show();
         agent.moveTo($(document).width()-400, 50);
         agent.speak("Looks like you're signing up for a hackathon, need any help?");
     });
+    air_horns();
 }
  function air_horns(){
     var audio = new Audio('/res/darude.mp3'); 
