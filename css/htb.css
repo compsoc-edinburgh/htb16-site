@@ -113,3 +113,7 @@
     margin-bottom:5%;
     font-weight:700;
 }
+
+.comic-sans{
+    font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+}
