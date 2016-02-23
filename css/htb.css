@@ -66,10 +66,21 @@
     width: 40%;
 }
 
+.jpmlogo, .ncrlogo {
+    float: none;
+    margin: 0 auto;
+}
+
 .armlogo {
     float: none;
     margin: 0 auto;
     width: 70%;
+}
+
+.compsoclogo {
+    float: none;
+    margin: 0 auto;
+    width: 50%;
 }
 
 .eflogo {
