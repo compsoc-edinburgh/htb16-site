@@ -27,7 +27,7 @@
    .row.vertical-align { /*This is for the sponsor logos so they don't break on phones */
         display: flex;
         align-items: center;
-        } 
+        }
 }
 
 .logo-content {
@@ -72,10 +72,11 @@
     width: 70%;
 }
 
-.jpmlogo {
+.eflogo {
     float: none;
+    vertical-align: middle;
     margin: 0 auto;
-    width: 35%;
+    width: 20%;
 }
 
 /* Properties for typed-cursor */
