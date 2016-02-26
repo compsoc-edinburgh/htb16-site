@@ -87,7 +87,7 @@
     float: none;
     vertical-align: middle;
     margin: 0 auto;
-    width: 20%;
+    max-width: 10%;
 }
 
 /* Properties for typed-cursor */
