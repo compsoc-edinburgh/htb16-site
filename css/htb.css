@@ -87,7 +87,13 @@
     float: none;
     vertical-align: middle;
     margin: 0 auto;
-    max-width: 10%;
+    max-width: 20%;
+}
+.cwlogo {
+    float: none;
+    vertical-align: middle;
+    margin: 0 auto;
+    max-width: 70%;
 }
 
 /* Properties for typed-cursor */
