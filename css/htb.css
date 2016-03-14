@@ -89,6 +89,12 @@
     margin: 0 auto;
     max-width: 20%;
 }
+.p2plogo {
+    float: none;
+    vertical-align: middle;
+    margin: 0 auto;
+    max-width: 30%;
+}
 .cwlogo {
     float: none;
     vertical-align: middle;
