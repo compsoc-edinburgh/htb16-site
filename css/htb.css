@@ -102,6 +102,10 @@
     max-width: 70%;
 }
 
+.reimbursements  {
+    font-size:130%;
+
+}
 /* Properties for typed-cursor */
 .typed-cursor{
     opacity: 1;
