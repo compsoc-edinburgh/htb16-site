@@ -159,20 +159,21 @@
     position: relative;
     margin: 10px 0px;
     padding: 20px 0px;
+    overflow:hidden;
 }
 
-.timeline::before {
+.timeline-line{
     left: 50%;
     margin-left: -3px;
     content: '';
     position: absolute;
     top: auto;
-    height: 250%;
     width: 6px;
     background: #EEE;
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
+
 }
 
 .timeline .time-slider::before {

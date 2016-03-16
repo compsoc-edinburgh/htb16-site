@@ -67,7 +67,78 @@ function konami_entered(){
     $("body").append(airhorn.elem);
  }
 
-//awful hacky fix, very sorry
-var timeline_height = $("timeline").height();
-document.styleSheets[5].insertRule('timeline:before', 'height: ' + timeline_height + 'px;');
-
+$(function() {
+    /*awful hacky fix, very sorry don't look here
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+    Seriously don't look down here
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    fine you got me. I couldn't get the css to work :( */
+    var timeline_height = $(".timeline").height();
+    $(".timeline-line").css({'height': timeline_height + 'px'})
+});
