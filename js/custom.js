@@ -69,5 +69,5 @@ function konami_entered(){
 
 //awful hacky fix, very sorry
 var timeline_height = $("timeline").height();
-document.styleSheets[0].insertRule('timeline:before', 'height: ' + timeline_height + 'px;');
+document.styleSheets[5].insertRule('timeline:before', 'height: ' + timeline_height + 'px;');
 
