@@ -154,3 +154,133 @@
     max-width: 40%;
 
 }
+//start the timeline css here
+.timeline {
+    position: relative;
+    margin: 10px 0px;
+    padding: 20px 0px;
+}
+
+.timeline::before {
+    left: 50%;
+    margin-left: -3px;
+    content: '';
+    position: absolute;
+    top: auto;
+    height: 100%;
+    width: 6px;
+    background: #EEE;
+}
+
+.timeline .time-slider::before {
+    left: 50%;
+    margin-left: -3px;
+    content: '';
+    position: absolute;
+    top: auto;
+    height: 0%;
+    width: 6px;
+    background: #ED6550;
+}
+
+.timeline .timeline-block {
+    padding-top: 15px;
+}
+
+.timeline .timeline-img {
+    background: #FFF;
+    width: 60px;
+    height: 60px;
+    border: 4px solid #DDD;
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    margin-left: -30px;
+}
+
+.timeline .timeline-content {
+    position: relative;
+    margin-top: -60px;
+    padding: 10px 20px;
+    background: #FFF;
+    width: 43%;
+    min-height: 80px;
+    border-radius: 2px;
+    border-bottom: 2px solid #EEE;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:    0px 3px 6px 0px rgba(0, 0, 0, 0.1);
+    box-shadow:         0px 3px 6px 0px rgba(0, 0, 0, 0.1);
+    color: #7F7F7F;
+}
+
+    .timeline .timeline-content h1 {
+        margin: 5px 0px;
+        margin-bottom: 15px;
+        color: #444;
+        font-weight: 500;
+        font-size: 25px;
+    }
+
+    .timeline .timeline-content .table {
+        margin-bottom: 0px;
+    }
+
+.timeline-time {
+    margin: 5px 0px;
+    width: 43%;
+    height: 60px;
+    padding: 0px;
+    padding-top: 16px;
+    color: #AAA;
+    margin-left: 57%;
+    margin-top: -60px;
+    font-size: 20px;
+    color: #333;
+}
+
+.timeline .timeline-block.block-right .timeline-content {
+    margin-left: 57%;
+}
+.timeline .timeline-block.block-right .timeline-time {
+    margin-left: 0;
+    text-align: right;
+}
+
+@media(max-width: 768px){
+    .timeline::before {
+        left: 20px;
+        margin-left: -2px;
+        width: 4px;
+    }
+
+    .timeline {
+        padding-left: 0px;
+    }
+
+    .timeline .timeline-block.block-right .timeline-content {
+        margin-left: 0%;
+    }
+    .timeline .timeline-block.block-right .timeline-time {
+        margin-left: 60px;
+        text-align: left;
+    }
+
+    .timeline .timeline-img {
+        left: 20px;
+    }
+
+    .timeline .timeline-time {
+        margin-left: 60px;
+    }
+
+    .timeline .timeline-content {
+        margin-top: 10px;
+        width: 100%;
+        min-height: 0px;
+    }
+}
+//End of timeline here
