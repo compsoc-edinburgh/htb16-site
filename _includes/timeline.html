@@ -229,4 +229,12 @@
 
   </div><!-- .timeline -->
   </div>
-</section>
+    <script type="text/javascript">
+        //awful hacky fix, very sorry
+        $(document).ready(function(){
+            var timeline_height = $("timeline").height();
+            document.styleSheets[0].addRule('timeline:before', 'height: ' + timeline_height + 'px;');
+        }); 
+    </script>
+
+    </section>

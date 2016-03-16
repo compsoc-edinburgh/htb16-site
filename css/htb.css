@@ -167,9 +167,12 @@
     content: '';
     position: absolute;
     top: auto;
-    height: 100%;
+    height: 250%;
     width: 6px;
     background: #EEE;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .timeline .time-slider::before {

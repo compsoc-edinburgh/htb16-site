@@ -66,3 +66,8 @@ function konami_entered(){
     var airhorn = new Airhorn();
     $("body").append(airhorn.elem);
  }
+
+//awful hacky fix, very sorry
+var timeline_height = $("timeline").height();
+document.styleSheets[0].insertRule('timeline:before', 'height: ' + timeline_height + 'px;');
+
