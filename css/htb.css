@@ -69,25 +69,32 @@
 .jpmlogo, .ncrlogo {
     float: none;
     margin: 0 auto;
+    width: 40%
 }
 
 .armlogo {
     float: none;
     margin: 0 auto;
-    width: 70%;
+    width: 50%;
+}
+
+.bloomberg_logo {
+    float: none;
+    margin: 0 auto;
+    width: 35%;
 }
 
 .compsoclogo {
     float: none;
     margin: 0 auto;
-    width: 25%;
+    width: 15%;
 }
 
 .eflogo {
     float: none;
     vertical-align: middle;
     margin: 0 auto;
-    max-width: 20%;
+    max-width: 10%;
 }
 .p2plogo {
     float: none;
@@ -99,7 +106,7 @@
     float: none;
     vertical-align: middle;
     margin: 0 auto;
-    max-width: 70%;
+    max-width: 50%;
 }
 
 .reimbursements  {
@@ -288,3 +295,5 @@
     }
 }
 //End of timeline here
+
+
