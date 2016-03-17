@@ -220,9 +220,13 @@
 }
 
 .timeline .timeline-img .fa {
-    position: relative;
+    position: absolute;
     top: 50%;
-    transform: translateY(-50%); 
+    left: 50%; 
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    font-size: 2em;
 }
 
 .timeline .timeline-content {
