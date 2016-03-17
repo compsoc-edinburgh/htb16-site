@@ -219,6 +219,12 @@
     margin-left: -30px;
 }
 
+.timeline .timeline-img .fa {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
 .timeline .timeline-content {
     position: relative;
     margin-top: -60px;
