@@ -161,26 +161,58 @@
     max-width: 40%;
 
 }
-//start the timeline css here
+
+/*Start timeline css*/
 .timeline {
     position: relative;
     margin: 10px 0px;
     padding: 20px 0px;
     overflow:hidden;
 }
+.timeline h2 {
+    color: black !important;
+}
 
 .timeline-line{
     left: 50%;
     margin-left: -3px;
     content: '';
+    z-index: -1;
     position: absolute;
-    top: auto;
+    top: 0;
+    bottom: 0;
     width: 6px;
     background: #EEE;
     background-size: contain;
     background-repeat: repeat-y;
     background-size: cover;
 
+}
+
+.timeline-line::before{
+    position: absolute;
+    top: 0;
+    left:-7px;
+    content: '';
+    background: #EEE;
+    border-radius: 100%;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0;    
+}
+
+.timeline-line::after{
+    position: absolute;
+    bottom: 0;
+    left:-7px;
+    content: '';
+    background: #EEE;
+    border-radius: 100%;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0;    
 }
 
 .timeline .time-slider::before {
@@ -213,6 +245,16 @@
     margin-left: -30px;
 }
 
+.timeline .timeline-img .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    font-size: 2em;
+}
+
 .timeline .timeline-content {
     position: relative;
     margin-top: -60px;
@@ -241,6 +283,7 @@
     }
 
 .timeline-time {
+    text-align: left;
     margin: 5px 0px;
     width: 43%;
     padding: 0px;
@@ -248,7 +291,6 @@
     color: #AAA;
     margin-left: 57%;
     margin-top: -60px;
-    font-size: 20px;
     color: #333;
 }
 
@@ -268,23 +310,23 @@
     }
 
     .timeline {
-        padding-left: 0px;
+        padding: 20px 30px 40px;
     }
 
     .timeline .timeline-block.block-right .timeline-content {
         margin-left: 0%;
     }
-    .timeline .timeline-block.block-right .timeline-time {
-        margin-left: 60px;
-        text-align: left;
-    }
 
     .timeline .timeline-img {
         left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .timeline .timeline-time {
-        margin-left: 60px;
+        margin-left: 60px !important;
+        text-align: left !important;
+        width:100% !important;
     }
 
     .timeline .timeline-content {
@@ -293,6 +335,12 @@
         min-height: 0px;
     }
 }
-//End of timeline here
+
+@media(max-width: 375px){
+    .timeline {
+        padding: 20px 20px 40px;
+    }
+}
+/*End of timeline here*/
 
 
