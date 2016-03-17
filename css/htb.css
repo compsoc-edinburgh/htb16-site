@@ -170,14 +170,14 @@
     overflow:hidden;
 }
 .timeline h2 {
-	color: black !important;
+    color: black !important;
 }
 
 .timeline-line{
     left: 50%;
     margin-left: -3px;
     content: '';
-	z-index: -1;
+    z-index: -1;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -273,23 +273,23 @@
     }
 
     .timeline {
-        padding-left: 0px;
+        padding: 20px 30px;
     }
 
     .timeline .timeline-block.block-right .timeline-content {
         margin-left: 0%;
     }
-    .timeline .timeline-block.block-right .timeline-time {
-        margin-left: 60px;
-        text-align: left;
-    }
 
     .timeline .timeline-img {
         left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .timeline .timeline-time {
-        margin-left: 60px;
+        margin-left: 60px !important;
+        text-align: left !important;
+        width:100% !important;
     }
 
     .timeline .timeline-content {
@@ -298,6 +298,11 @@
         min-height: 0px;
     }
 }
-//End of timeline here
+@media(max-width: 375px){
+    .timeline {
+        padding: 20px 20px;
+    }
+}
+/*End of timeline here*/
 
 
