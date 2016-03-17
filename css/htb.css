@@ -161,7 +161,8 @@
     max-width: 40%;
 
 }
-//start the timeline css here
+
+/*Start timeline css*/
 .timeline {
     position: relative;
     margin: 10px 0px;
@@ -173,8 +174,10 @@
     left: 50%;
     margin-left: -3px;
     content: '';
+	z-index: -1;
     position: absolute;
-    top: auto;
+    top: 0;
+    bottom: 0;
     width: 6px;
     background: #EEE;
     background-size: contain;
