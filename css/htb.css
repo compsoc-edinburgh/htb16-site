@@ -169,6 +169,9 @@
     padding: 20px 0px;
     overflow:hidden;
 }
+.timeline h2 {
+	color: black !important;
+}
 
 .timeline-line{
     left: 50%;
@@ -251,7 +254,6 @@
     color: #AAA;
     margin-left: 57%;
     margin-top: -60px;
-    font-size: 20px;
     color: #333;
 }
 
