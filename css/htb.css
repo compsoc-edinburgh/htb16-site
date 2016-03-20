@@ -11,6 +11,11 @@
     padding-top: 5%;
 }
 
+.header-video {
+    margin: auto;
+    max-width: 80%;
+}
+
 @media (max-width: 420px) {
     .header-content-inner {
         padding-top: 35%;
