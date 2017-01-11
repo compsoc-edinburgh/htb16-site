@@ -1,6 +1,6 @@
 # Hack the Burgh 2016: Website
 
-This is the website for HTB 2016. The same repository was used for HTB 2015.
+This is the website for HTB 2016. The same repository was used for HTB 2015, and now lives [here](https://github.com/compsoc-edinburgh/htb15-site).
 
 ## How to test
 
